@@ -1,3 +1,5 @@
+# This Puppet script configures SSH client to use a specific private key and disable password authentication
+
 file_line { 'Declare identity file':
   path  => '/home/vagrant/.ssh/config',
   line  => '    IdentityFile ~/.ssh/school',
